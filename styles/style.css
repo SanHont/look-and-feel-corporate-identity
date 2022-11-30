@@ -1,0 +1,222 @@
+:root {
+    --wit: #FFF;
+    --geel: #FFD05F;
+    --cyaan: #46BECD;
+    --turkoois: #25AE93;
+    --blauw: #606EB3;
+    --bruin: #6A4955;
+    --zand: #C9B5B2;
+    --grijs: #444444;
+    --licht-grijs: #DDDDDD;
+    --zwart: #000;
+    --magenta-donker: #B9005F;
+    --magenata-licht: #E30059;
+    --gradient-color-magenta: linear-gradient(332deg, #B9005F 0%, #E30059 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Fira Sans Regular';
+    src:
+        url('../fonts/FiraSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Fira Sans Medium';
+    src:
+        url('../fonts/FiraSans-Medium.ttf');
+}
+
+/* BODY */
+
+body {
+    background-color: var(--licht-grijs);
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    width: 100vw;
+    height: 6vh;
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header #logo {
+    width: auto;
+    height: 5em;
+    border: 4px solid var(--wit);
+    border-radius: 0 0 3em 0;
+    background: var(--wit);
+    padding: 0.5em 1.2em;
+    position: absolute;
+    z-index: 2;
+}
+
+header #logo::after {
+    width: 1em;
+    aspect-ratio: 1/1;
+}
+
+#logo svg {
+    left: 13.8em;
+    position: relative;
+    z-index: -9;
+    height: 6em;
+}
+
+#after-curve {
+    width: 100vw;
+    height: 2.5em;
+    background-color: var(--wit);
+    position: inherit;
+}
+
+#after-curve::before {
+    content: '';
+    width: 3.5em;
+    height: 3.5em;
+    position: absolute;
+    top: 2.5em;
+    left: 13.8em;
+    box-shadow: 0.1em -1em 0 -0.2em var(--wit);
+    border-radius: 60% 0 0 0;
+}
+
+#curve {
+    width: 1em;
+    height: 2em;
+    display: block;
+}
+
+.contrast-button-header {
+    background-color: #000;
+    z-index: 2;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: var(--magenta-donker);
+    border-radius: 0 1rem 1rem 0;
+    padding: 1rem;
+    margin-top: 7rem;
+    height: 100%;
+    width: 16rem;
+}
+
+.innermap a {
+    position: relative;
+    color: var(--wit);
+    display: flex;
+    align-items: center;
+    padding: 0.7rem;
+    text-decoration-line: none;
+    transition: 0.3s ease-in;
+}
+
+.innermap a:hover {
+    transition: 0.3s ease-out;
+    background-color: var(--zand);
+    color: var(--wit);
+    border-radius: 0.6rem;
+}
+
+svg {
+    width: 5rem;
+    fill: var(--wit);
+    transition: 0.3s ease-in;
+}
+
+a:hover svg {
+    fill: var(--wit);
+    transition: 0.3s ease-out;
+}
+
+.innermap i {
+    font-size: larger;
+    color: var(--magenta-donker);
+    position: absolute;
+    padding-left: 2rem;
+}
+
+.innermap p {
+    padding-left: 1rem;
+    font-family: 'Fira Sans Regular';
+}
+
+/* CONTENT */
+
+.content {
+    margin-top: 7rem;
+    margin-left: 9rem;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    width: 50rem;
+    height: 35rem;
+    background-color: var(--wit);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1.3fr 0.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "index-titel index-titel"
+        "tekst-1-index svg-index"
+        "tekst-2-index tekst-2-index";
+}
+
+.index-titel {
+    margin: auto 2rem;
+    grid-area: index-titel;
+    color: var(--magenta-donker);
+}
+
+.h1-index-titel {
+    font-family: 'Fira Sans Medium';
+}
+
+.tekst-1-index {
+    grid-area: tekst-1-index;
+    margin-left: 2rem;
+    max-width: 30rem;
+}
+
+.svg-index {
+    grid-area: svg-index;
+}
+
+.index-svg {
+    width: auto;
+    height: 12rem;
+}
+
+.tekst-2-index {
+    grid-area: tekst-2-index;
+    margin: auto 2rem;
+    max-width: 30rem;
+}
+
+.tekst-index {
+    font-family: 'Fira Sans Regular';
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    margin-top: 6rem;
+    height: 8rem;
+    background-color: var(--turkoois);
+}
