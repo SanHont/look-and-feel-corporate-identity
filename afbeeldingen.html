@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vervoerregio Amsterdam</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="icon" type="image/x-icon" href="/assets/vervoerregioamsterdamfavicon.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/vervoerregioamsterdamfavicon.ico">
 </head>
 
 <body>
@@ -15,112 +15,156 @@
     <header>
         <img id="logo" src="assets/logo.png" alt="logo Vervoerregio Amsterdam">
         <div id="after-curve"></div>
+        <button class="contrast-button-header"></button>
     </header>
 
-    <div class="sidebar">
-        <div class="innermap">
-            <a href="index.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-house"></i>
-                <p>Home</p>
-            </a>
+    <!-- Element die overal overheen zit, om flex te zetten -->
+    <main>
+        <nav class="sidebar">
+            <div class="innermap">
+                <a href="index.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="afbeeldingen.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-regular fa-images"></i>
+                    <p>Afbeeldingen</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="bediening.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-keyboard"></i>
+                    <p>Bediening</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="formulieren.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-list"></i>
+                    <p>Formulieren</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="media.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-photo-film"></i>
+                    <p>Media</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="navigatie.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                    <p>Navigatie</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="ontwerp.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <p>Ontwerp</p>
+                </a>
+            </div>
+
+            <div class="innermap">
+                <a href="teksten.html">
+                    <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
+                        </path>
+                    </svg>
+                    <i class="fa-solid fa-book"></i>
+                    <p>Teksten</p>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Content van de website naast de sidebar -->
+        <div class="content">
         </div>
 
-        <div class="innermap">
-            <a href="afbeeldingen.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-regular fa-images"></i>
-                <p>Afbeeldingen</p>
-            </a>
-        </div>
-
-        <div class="innermap">
-            <a href="bediening.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-keyboard"></i>
-                <p>Bediening</p>
-            </a>
-        </div>
-
-        <div class="innermap">
-            <a href="formulieren.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-list"></i>
-                <p>Formulieren</p>
-            </a>
-        </div>
-
-        <div class="innermap">
-            <a href="media.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-photo-film"></i>
-                <p>Media</p>
-            </a>
-        </div>
-
-        <div class="innermap">
-            <a href="navigatie.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-arrow-pointer"></i>
-                <p>Navigatie</p>
-            </a>
-        </div>
-
-        <div class="innermap">
-            <a href="ontwerp.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-paintbrush"></i>
-                <p>Ontwerp</p>
-            </a>
-        </div>
-
-        <div class="innermap">
-            <a href="teksten.html">
-                <svg viewBox="0 0 388 268" fill="" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M168.133 0H25.8667C17.2444 0 0 5.16 0 25.8V242C0 250.6 5.17333 267.8 25.8667 267.8H362.133C370.756 267.8 388 262.64 388 242V51.6C388 43 382.827 25.8 362.133 25.8H219.867C215.556 25.8 204.347 23.22 194 12.9C183.653 2.58 172.444 0 168.133 0Z">
-                    </path>
-                </svg>
-                <i class="fa-solid fa-book"></i>
-                <p>Teksten</p>
-            </a>
-        </div>
-    </div>
+    </main>
 
     <footer>
-        <div class="footer">
 
+        <div class="regio-logo"> <img src="assets/vervoerregio's.svg" alt=""> </div>
+
+        <div class="contact-footer">
+            <div>
+                <h4>Contact</h4>
+                <ul class="ul-footer">
+                    <li>Vervoerregio<br> Jodenbreestraat 25<br> 1011 NH Amsterdam</li>
+                    <li>Postbus 626<br> 1000 AP Amsterdam</li>
+                    <li>020-5273700</li>
+                    <li>info@vervoerregio.nl</li>
+                </ul>
+            </div>
         </div>
 
+        <button type="button" class="display-vragen-formulier">
+            <p>Verstuur een bericht</p>
+        </button>
+        <div class="vragen-formulier">
+            <form>
+
+                <label for="fname">Voornaam *</label>
+                <input type="text" id="fname" name="firstname" placeholder="Uw voornaam" required>
+
+                <label for="lname">Achternaam *</label>
+                <input type="text" id="lname" name="lastname" placeholder="Uw achternaam" required>
+
+                <label for="lname">E-mail *</label>
+                <input type="text" id="lname" name="lastname" placeholder="info@vervoerregio.nl" required>
+
+                <label for="subject">Onderwerp *</label>
+                <textarea id="subject" name="subject" placeholder="Berijk ons met al uw vragen." required></textarea>
+
+                <input type="submit" value="Verzenden">
+
+            </form>
+        </div>
     </footer>
+
+    <script src="./scripts/script.js"></script>
 
 
 </body>
