@@ -2,21 +2,14 @@
 Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
 De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+Nadat ik de feedback had ontvangen na de afspraak bij hun op kantoor ben ik weer gaan kijken hoe ik dat het beste zou kunnen toe passen zodat het nog meer naar hun wens zal zijn. En maakte aantekeningen waar ik kon.
 
-## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Nadat ik feedback had gekregen van de vervoerregio Amsterdam en we met onze groep een styleguide hadden ontworpen ben ik opnieuw gaan ontwerpen hoe ik wou dat mijn website er uit zou gaan zien.
 
-## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+Toen ik het ontwerp had gemaakt ben ik gaan beginnen met het bouwen van de website. Ik ben begonnen met het maken van de header en dat was nog lastiger dan verwacht maar uit eindelijk wel gelukt.
 
-## Bronnen
+Ik heb doormiddel van Github desktop mijn website naar Github gepusht en het staat via Github Pages online.
 
-## Licentie
+Ik heb mijn website getest met Lighthouse en er kwam een 100 score uit. Ik heb ook getest doormiddel van alleen het toetsenbord te gebruiken en getest op een screenreader.
 
-![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
-
-This work is licensed under [GNU GPLv3](./LICENSE).
+Een uitgebreidere uitleg staat in de wiki.
